@@ -21,7 +21,7 @@ public class FirstTest {
         options.addArguments("headless");
         driver = new ChromeDriver(options);
         driver.get("https://www.google.com");
-        System.out.println(driver.getTitle());
+        System.out.println("Web Page's Title: " + driver.getTitle());
         Assert.assertTrue("Page title is not correct",driver.getTitle().equals("Google"));
     }
 
