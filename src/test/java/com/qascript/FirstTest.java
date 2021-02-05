@@ -17,6 +17,10 @@ public class FirstTest {
 
         // EC2 Amazon Linux path to chromedriver
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+
+        // Windows path to Chromedriver
+        //System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+
         ChromeOptions options = new ChromeOptions();
         options.addArguments("headless");
         driver = new ChromeDriver(options);
