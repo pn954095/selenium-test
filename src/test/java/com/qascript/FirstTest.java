@@ -12,7 +12,11 @@ public class FirstTest {
     @Test
     public void OpenBrowser()  {
         WebDriver driver;
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
+        // Mac path to chromedriver
+        //System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+
+        // EC2 Amazon Linux path to chromedriver
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("headless");
         driver = new ChromeDriver(options);
